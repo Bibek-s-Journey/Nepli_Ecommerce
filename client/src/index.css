@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Ubuntu&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .clip-hero{
+        clip-path: circle(80% at 97% 58%);
+    }
+    .animation-Toast{
+        animation: time 5s linear forwards;
+    }
+    .no-spinner::-webkit-outer-spin-button,
+  .no-spinner::-webkit-inner-spin-button {
+    @apply appearance-none;
+    margin: 0;
+  }
+
+  .no-spinner {
+    @apply appearance-none;
+  }
+
+  
+}
+@keyframes time{
+    100%{
+        width: 0;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+}
